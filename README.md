@@ -48,11 +48,11 @@ To set up the Q&A Assistant locally, follow these steps:
 ```python
    cd Question-Answering-System-with-Agentic-RAG
 ```
-4. Install the required Python packages using pip:
+3. Install the required Python packages using pip:
 ```python
 pip install -r requirements.txt
 ```
-6. Set up environment variables:
+4. Set up environment variables:
   - Define the necessary environment variables such as database connection strings, API keys, etc.
 5. Run the Streamlit application:
 ```
