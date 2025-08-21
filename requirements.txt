@@ -1,0 +1,21 @@
+chromadb
+langchain-astradb
+langchain 
+groq
+langchain_community
+langchain-groq
+langchain_google_genai
+sentence-transformers
+pypdf
+python-dotenv
+streamlit
+certifi
+fastapi
+python-multipart
+uvicorn
+langsmith
+google-generativeai
+faiss-cpu
+langgraph
+
+-e .
