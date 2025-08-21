@@ -11,50 +11,50 @@ An end-to-end LLM-powered Question Answering system that uses Retrieval-Augmente
 - 📄Document Ingestion & Preprocessing
 
 
-  - Parses PDFs using PyMuPDF & Unstructured
+  - Parses PDFs using PyPDFDirectoryLoader
 
-  - Text chunking + embedding with sentence-transformers
+  - Text chunking + embedding with RecursiveCharacterTextSplitter and Gemini Embedding 
 
-  - Vector storage with FAISS (metadata-aware retrieval)
+  - Vector storage with AstraDB (serverless database)
 
 - 🔍 Retrieval-Augmented Generation (RAG)
 
   - Contextual Q&A with top-k retrieval
 
-  - Reranking for better relevance (Cohere / Hugging Face models)
+- 🤖 Agentic Tool Use (LangChain Agents)
 
-  - Fallback to LLM-only response when no strong context
+  - Query Rewriter tool when fail retrieve strong context
 
-🤖 Agentic Tool Use (LangChain Agents)
+- 📝 Prompt Engineering 
 
-Calculator (Wolfram plugin)
+    - Structured system prompts for safe output
 
-Web search (Bing API)
+    - Used Role-Playing, Guardrails, and Output Constraints to avoid hallucination
 
-File reader for CSVs / structured data
+- 📊 Evaluation & Logging
 
-Human-in-the-loop escalation
+  - Logs all responses, sources, and latency metrics with Langsmith
 
-📝 Prompt Engineering & Memory
+---
 
-Structured system prompts for safe output
+## Installation
+To set up the Q&A Assistant locally, follow these steps:
 
-Conversation history with buffer + summarization
-
-Confidence estimation to avoid hallucination
-
-📊 Evaluation & Logging
-
-Benchmarked with EM, F1, BLEU, and latency metrics
-
-Logs all responses, sources, and feedback
-
-Feedback loop for iterative model improvement
-
-☁️ Deployment
-
-FastAPI backend containerized with Docker
-
-GCP Cloud Run deployment (works on AWS/Azure too)
-
-CI/CD with GitHub Actions + Cloud Build
+1. Clone the repository to your local machine:
+```python
+   git clone https://github.com/samanta-sc/Question-Answering-System-with-Agentic-RAG.git
+```
+2. Navigate to the project directory:
+```python
+   cd Question-Answering-System-with-Agentic-RAG
+```
+4. Install the required Python packages using pip:
+```python
+pip install -r requirements.txt
+```
+6. Set up environment variables:
+  - Define the necessary environment variables such as database connection strings, API keys, etc.
+5. Run the Streamlit application:
+```
+streamlit run app.py
+```
