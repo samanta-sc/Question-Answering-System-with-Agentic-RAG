@@ -61,4 +61,15 @@ streamlit run app.py
 
 ---
 
-## Demo
+## 📸 Demo
+
+<table>
+  <tr>
+    <td>Chat PDF API</td>
+     <td>Answer from API</td>
+  </tr>
+  <tr>
+    <td><img align="left" src="resources/thumbnail_1.png" width=350 height=480></td>
+    <td><img align="left" src="resources/Screenshot (9).png" width=350 height=480></td>
+  </tr>
+ </table>
