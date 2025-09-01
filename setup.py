@@ -6,5 +6,5 @@ setup(
     author="Samanta",
     author_email="farjanakabirsamanta85@gmail.com",
     packages=find_packages(),
-    install_requires=['AstraDB','langchain ','langchain-groq','PyPDFDirectoryLoader','langchain_huggingface','python-dotenv','streamlit']
+    install_requires=['langchain-astradb','langchain ','langchain-groq','PyPDFDirectoryLoader','langchain_huggingface','python-dotenv','streamlit']
 )
